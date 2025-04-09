@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Quality Result</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .result-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .result-box h2 {
+            color: #333;
+        }
+        .quality {
+            font-size: 24px;
+            margin-top: 15px;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>Predicted Wine Quality Score: {{ prediction }}</h2>
+        <div class="quality">Category: {{ quality_text }}</div>
+        <form action="/">
+            <button class="btn" type="submit">Try Another Prediction</button>
+        </form>
+    </div>
+</body>
+</html>
