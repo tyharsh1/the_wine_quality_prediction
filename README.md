@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  # 🍷 Wine Quality Prediction App
 
 This is a Streamlit-based web application that predicts wine quality based on physicochemical properties using a trained machine learning model. The app also includes visualizations and an all-drinks information page.
@@ -94,3 +95,7 @@ Your Harsh Tyagi
 This project is licensed under the MIT License.
 
 ---
+=======
+# the_wine_quality_prediction
+Wine_Quality_Prediction
+>>>>>>> 7c25306e578baa6032a610155767f0c655899605
